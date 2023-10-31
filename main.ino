@@ -6,14 +6,25 @@ with the HX710B/HX711 ADC
  */
 #include <Q2HX711.h>
 
+// Sensor 1
 const byte MPS_OUT_pin = 2; // OUT data pin
 const byte MPS_SCK_pin = 3; // clock data pin
+
+// Sensor 2
+const byte MPS_OUT_pin = 4; // OUT data pin
+const byte MPS_SCK_pin = 5; // clock data pin
+
+// Sensor 3
+const byte MPS_OUT_pin = 6; // OUT data pin
+const byte MPS_SCK_pin = 7; // clock data pin
+
 int avg_size = 10; // #pts to average over
 
+// TODO: figure out how to use multiple sensors at once?
 Q2HX711 MPS20N0040D(MPS_OUT_pin, MPS_SCK_pin); // start comm with the HX710B
 
 void setup() {
-  Serial.begin(9600); // start the serial port
+  Serial.begin(9600); 
 }
 
 void loop() {
