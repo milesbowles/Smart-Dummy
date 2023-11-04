@@ -35,4 +35,6 @@ void loop() {
   }
   avg_val /= avg_size;
   Serial.println(avg_val,0); // print out the average
+
+// TODO: add radio coms
 }
