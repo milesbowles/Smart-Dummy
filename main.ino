@@ -41,4 +41,6 @@ void loop() {
 // TODO: add speaker 
 // TODO: add on/off switch
 
+// TODO: add joints with encoders to detect limb angle
+
 }
